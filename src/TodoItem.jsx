@@ -7,13 +7,14 @@ export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
   <label>
     <input 
     type='checkbox' 
+    className='checkradio'
     checked={completed}
     onChange={e => toggleTodo(id, e.target.checked)}
     />
-    {title}
+    <span className="todo-title">{title}</span>
   </label>
-  <button onClick={() => deleteTodo(id)} className='btn btn-danger'>
-    Delete
+  <button onClick={() => deleteTodo(id)} className='btn-delete'>
+    <i class="fa fa-minus-square-o"></i>
   </button>
 </li>
   )

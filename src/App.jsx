@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 // import { v4 as uuidv4 } from 'uuid';
 import { NewTodoForm } from './NewTodoForm'
-import './styles.css';
 import { TodoList } from './TodoList';
 import myImage from './assets/Kfly.webp';
+
 
 //Hook in react need to be on the top of the function!
 //Hook cant be rendered conditionally (if (true) or loops or returns!
@@ -54,10 +54,15 @@ function addTodo(title) {
   //CONTENT HTML + Components
   return (
     <>
-    <img className='profilBilde' src={myImage} alt="My Image" />
-    <h1 className='header'>Hva må gjøres idag?</h1>
+    <div className='container' >
+      <div class="profil-image">
+        <img src={myImage} /> 
+      </div>
+    <h1 className='headertext'>Hva må gjøres idag?</h1>
     <NewTodoForm onSubmit={addTodo} />
+    </div>
     <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+    
     </>
   )
 }
