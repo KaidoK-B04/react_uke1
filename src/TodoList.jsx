@@ -4,7 +4,7 @@ import { TodoItem } from "./TodoItem"
 export function TodoList({ todos, toggleTodo, deleteTodo }) {
   return (      
     <ul className='list'>
-    {todos.length === 0 && 'Gratulerer'}
+    {todos.length === 0 && 'Gratulerer! Du har ikke flere oppgaver :)'}
     {todos.map(todo => {
       return (
         <TodoItem {...todo} key={todo.id} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
