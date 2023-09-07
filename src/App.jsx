@@ -58,7 +58,7 @@ function addTodo(title) {
       <div class="profil-image">
         <img src={myImage} /> 
       </div>
-    <h1 className='headertext'>Hva må gjøres idag?</h1>
+        <h1 className='headertext'>Hva må gjøres idag?</h1>
     <NewTodoForm onSubmit={addTodo} />
     </div>
     <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />

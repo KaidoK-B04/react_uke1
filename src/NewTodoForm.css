@@ -28,6 +28,7 @@ button {
   padding: 0px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .btn {

@@ -3,10 +3,10 @@
 li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   width: 70%;
   min-height: 60px;
-  border: 2px solid salmon;
+  border: 2px solid rgba(255, 99, 71, 0.5);
   border-radius: 5px;
   margin-top: 30px;
   left: 20%;
@@ -15,10 +15,8 @@ li {
  .checkradio {
   width: 20px;
   height: 20px;
-  right: 0;
-  left: 0;
-  margin: 0 20px 0 20px;
-  margin-top: 5px;
+  margin: 20px 20px 10px 20px;
+  cursor: pointer;
   }
 
 .todo-title {
@@ -35,5 +33,6 @@ li {
   font-size: 2.0rem;
   background-color: #ffffff;
   color: salmon;
-  padding-right: 20px;
+  margin: 14px 20px 10px 20px;
+  cursor: pointer;
 }
